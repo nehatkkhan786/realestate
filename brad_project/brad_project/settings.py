@@ -151,6 +151,12 @@ EMAIL_HOST_USER= 'abdulrasid82@yahoo.com'
 EMAIL_HOST_PASSWORD = 'Sabnam82786!'
 EMAIL_USE_TLS = True
 
+try:
+    from .local_settings import *
+
+except ImportError:
+    pass
+
 
 
 
